@@ -1,0 +1,142 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mishra Farm</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mishra Farm</h1>
+            <p>Fresh Dairy Products at Your Fingertips</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <h3>Fresh Milk</h3>
+                    <p>$5 per liter</p>
+                    <a href="https://wa.me/7050460340?text=I want to order Fresh Milk" target="_blank" class="order-btn">Order via WhatsApp</a>
+                </div>
+                <div class="product">
+                    <h3>Organic Cheese</h3>
+                    <p>$10 per block</p>
+                    <a href="https://wa.me/7050460340?text=I want to order Organic Cheese" target="_blank" class="order-btn">Order via WhatsApp</a>
+                </div>
+                <div class="product">
+                    <h3>Natural Yogurt</h3>
+                    <p>$6 per container</p>
+                    <a href="https://wa.me/7050460340?text=I want to order Natural Yogurt" target="_blank" class="order-btn">Order via WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Mishra Farm is committed to providing high-quality dairy products that are fresh, organic, and sustainable. We care about your health and the environment.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p><strong>Phone:</strong> 7050460340</p>
+            <p><strong>Email:</strong> info@mishrafarm.com</p>
+            <p><strong>Address:</strong> 123 Dairy Lane, Your City</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mishra Farm. All rights reserved.</p>
+    </footer>
+</body>
+</html> -->
+
+<!--another way to do the same thing -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mishra Farm</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mishra Farm</h1>
+            <p>Fresh Dairy Products Delivered to Your Doorstep</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Products Section -->
+        <section id="products" class="section">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <h3>Fresh Milk</h3>
+                    <p>Price:Rs 50/- per liter</p>
+                    <button onclick="orderNow('Fresh Milk')">Order Now</button>
+                </div>
+                <div class="product">
+                    <h3>Fresh Paneer</h3>
+                    <p>Price:Rs 200/- per kg</p>
+                    <button onclick="orderNow('Fresh Paneer')">Order Now</button>
+                </div>
+                <div class="product">
+                    <h3>Fresh curd</h3>
+                    <p>Price:Rs 60/- per container</p>
+                    <button onclick="orderNow('Fresh Curd')">Order Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>Mishra Farm provides high-quality, fresh, and organic dairy products. Our mission is to ensure sustainability while delivering the best products directly to your home.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p><strong>Phone:</strong> +123-456-7890</p>
+            <p><strong>Email:</strong> info@mishrafarm.com</p>
+            <p><strong>Address:</strong> 123 Dairy Lane, Your City</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mishra Farm. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function orderNow(product) {
+            const url = `https://wa.me/7050460340?text=I want to order ${encodeURIComponent(product)}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
+
